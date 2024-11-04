@@ -12,3 +12,44 @@
 # The brake method should subtract 5 from the speed data attribute each time it is called.
 # The get_speed method should return the current speed.
 # Next, design a program that creates a Car object then calls the accelerate method five times.  After each call to the accelerate method, get the current speed of the car and display it.  The call the brake method.  After each call to the brake method, get the current speed of the car and display it.
+
+class Car:
+    def __init__(self, yearModel, make):
+        self.yearModel = yearModel
+        self.make = make
+        self.speed = 0
+
+    def accelerate(self):
+        self.speed += 5
+
+    def brake(self):
+        self.speed -= 5
+
+    def current_speed(self):
+        return self.speed
+
+car1 = Car("FordF150", 2009)
+car1.accelerate()
+car1Speed = car1.current_speed()
+print(car1Speed)
+car1.accelerate()
+car1Speed = car1.current_speed()
+print(car1Speed)
+car1.accelerate()
+car1Speed = car1.current_speed()
+print(car1Speed)
+car1.accelerate()
+car1Speed = car1.current_speed()
+print(car1Speed)
+car1.accelerate()
+car1Speed = car1.current_speed()
+print(car1Speed)
+car1.brake()
+car1Speed = car1.current_speed()
+print(car1Speed)
+car1.brake()
+car1Speed = car1.current_speed()
+print(car1Speed)
+car1.brake()
+car1Speed = car1.current_speed()
+print(car1Speed)
